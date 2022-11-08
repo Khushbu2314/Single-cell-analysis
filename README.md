@@ -21,3 +21,8 @@ In variable feature plot , they have shown us the variable count and non variabl
 The goal of performing dimensionality reduction is to find the approximate underlying dimensionality of the dataset.
 The DimHeatmap() tries to distinguish between cells based on the PC score of the different genes.This difference is reflected in the coloring of the different groups.Here cutoff occured at pc_15(borders start to become blurry).Both cells and features are ordered according to their PCA scores. Setting cells to a number plots the ‘extreme’ cells on both ends of the spectrum, which dramatically speeds plotting for large datasets.
 
+Elbow plots the % that each PC contributes to explaining the variation in the dataset. This means the higher the percentage, the more important the PC is.The elbow is formed from pc6 to pc10.
+
+After elbow plot dimplot is plotted and as shwon in the image it is clear that total 6 clusters are formed.DimPlot uses UMAP by default, with Seurat clusters as identity
+
+In feature plot two clusters were created LTB and GNLY,in single cell RNA data analysis
