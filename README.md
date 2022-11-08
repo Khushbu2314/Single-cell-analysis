@@ -18,7 +18,6 @@ The feature scatter plots shows the correlation,here plot1 value shown is -0.31(
 
 In variable feature plot , they have shown us the variable count and non variable count of the top 10 genes mentioned.
 
-DimPlot is used to visualize all reduced representations,DimPlot has built-in hiearachy of dimensionality reductions it tries to plot: first, it looks for UMAP, then (if not available) tSNE, then PCA.The goal of performing dimensionality reduction is to find the approximate underlying dimensionality of the dataset.
-
-
+The goal of performing dimensionality reduction is to find the approximate underlying dimensionality of the dataset.
+The DimHeatmap() tries to distinguish between cells based on the PC score of the different genes.This difference is reflected in the coloring of the different groups.Here cutoff occured at pc_15(borders start to become blurry).Both cells and features are ordered according to their PCA scores. Setting cells to a number plots the ‘extreme’ cells on both ends of the spectrum, which dramatically speeds plotting for large datasets.
 
